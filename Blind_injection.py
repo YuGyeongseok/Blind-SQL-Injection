@@ -39,11 +39,10 @@ class Request:
         else:
             return 1  # 성공!!!!!!!
 
+
 # 빠른 블라인드 검색을 위한 이진탐색 알고리즘 적용
 # 받아온 페이로드에 비교 연산자를 추가해 Request객체의 send메소드를 호출한 후 전달한다.
 # 모든 페이로드에는 이진 탐색 알고리즘을 위해 임의로 지정한 치환 문자 {}를 포함한다.
-
-
 class Data_Search:
     def binary(self, payload, left, right):
         r = Request()
