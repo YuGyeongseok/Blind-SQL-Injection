@@ -58,12 +58,11 @@ class Data_Search:
                 return i
         return -1
 
+
 # DB의 정보를 가져오는 클래스
 # getLength() : 현재 DB 이름의 길이를 출력한다.
 # getName() : 길이를 기반으로 이름을 출력한다.
 # getAll() : DB_Search의 메소드 모두 실행
-
-
 class DB_Search:
     length = 0
 
@@ -160,13 +159,12 @@ class Table_Search:
         self.getLength(db_name)
         self.getName(db_name)
 
+
 # 특정 테이블의 열 정보를 가져오는 클래스
 # getCount(DB이름, 테이블이름) : 지정한 테이블에 있는 열의 갯수를 출력하고 count 객체 변수에 저장한다.
 # getLength(DB이름, 테이블이름) : count값을 기반으로 열들의 이름 길이를 출력하고 length 객체 리스트 변수에 저장한다.
 # getName(DB이름, 테이블이름) : length값을 기반으로 열 이름을 출력한다.
 # getAll(DB이름, 테이블이름) : 위 내용 모두 실행
-
-
 class Column_Search:
     length = []
     resultAll = []
@@ -218,9 +216,9 @@ if __name__ == "__main__":
     db_name = 'database'
     table_name = 'table'
 
-    #db = DB_Search()
+    db = DB_Search()
     #table = Table_Search()
-    col = Column_Search()
-    # db.getAll()
+    #col = Column_Search()
+    db.getAll()
     # table.getAll(db_name)
-    col.getAll(db_name, table_name)
+    #col.getAll(db_name, table_name)
